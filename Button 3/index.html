@@ -4,7 +4,6 @@
 		<meta charset="UTF-8">
 		<title> Buttons </title>
 		<link rel="stylesheet" href="css/font-awesome.min.css">
-		
 		<style>
 body {
   margin: 0;
@@ -33,7 +32,7 @@ ul li {
   overflow: hidden;
   transition: all .5s ease-in;
 }
-			
+
 ul li:before {
   content:'';
   display: block;
@@ -57,7 +56,48 @@ ul li:after {
   opacity: .5;
 }
 
-    		</style>
+ul li a {
+  color: white;
+  margin: auto;
+  text-shadow: 0 2px 0 rgb(2,2,2);
+  transform: rotate(-45deg);
+  transition: all .5s ease-in;
+}
+
+ul li:hover {
+  transform: rotate(765deg);
+}
+
+ul li:hover:after {
+  right: 0%;
+}
+
+ul li:hover a {
+   transform: rotate(-765deg);
+}
+
+ul li:nth-of-type(1):before,
+ul li:nth-of-type(1):after {
+  background: rgb(54, 215, 183);
+}
+
+ul li:nth-of-type(2):before,
+ul li:nth-of-type(2):after {
+  background: rgb(191, 85, 236);
+}
+
+ul li:nth-of-type(3):before,
+ul li:nth-of-type(3):after {
+  background: #22A7F0;
+}
+
+ul li:nth-of-type(4):before,
+ul li:nth-of-type(4):after {
+  background: rgb(247, 202, 24);
+}
+
+
+		</style>
 	</head>
 	
 <body>
