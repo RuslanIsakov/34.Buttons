@@ -14,7 +14,8 @@ body{
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-}	
+}
+
 a{
 	position: relative;
 	padding: 8px 30px;
@@ -30,7 +31,6 @@ a{
 a:hover{
 	color: #fff;
 }
-
 a:before{
 	content: '';
 	position: absolute;
@@ -50,7 +50,8 @@ a:hover:before{
 	transition: transform 0.5s;
 	transform-origin: right;
 }
-		a:after{
+
+a:after{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -63,7 +64,13 @@ a:hover:before{
 	transition: transform 0.5s;
 	transform-origin: right;
 }
-  	</style>
+
+a:hover:after{
+	transform: scaleX(1);
+	transition: transform 0.5s;
+	transform-origin: left;
+}
+	</style>
 	
 <body>
 	<a href="#">Button</a>
