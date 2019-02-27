@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title> Buttons </title>
-    
+		
 		<style>
-    @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 body {
 	margin: 0;
@@ -22,7 +22,7 @@ body {
 	right: 0;
 	top: 50%;
 }
-			
+
 .btn {
   border: none;
   display: block;
@@ -40,7 +40,7 @@ body {
   margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0,0,0,0.20);
 }
-			
+
 .btn span {
   position: relative; 
   z-index: 1;
@@ -59,11 +59,16 @@ body {
   -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
   transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
-    		</style>
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+		</style>
 	</head>
 	
 <body>
 	<div class="button_container">
-	<button class="btn"><span>SUBMIT</span></button>
+	<button class="btn"><span> SUBMIT </span></button>
 </div>
 </body>
